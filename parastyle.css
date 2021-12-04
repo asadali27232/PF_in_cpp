@@ -26,7 +26,7 @@ body ,html{
 	min-height: 400px;
 }
 .img3{
-	background-image: url(https://images.unsplash.com/photo-1546146830-2cca9512c68e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
+	background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
 	min-height:400px;
 }
 .mimg{
@@ -35,8 +35,8 @@ body ,html{
 	filter: blur(1px);
 }
 .section-light{
-  background-color:#f4f4f4;
-  color:#666;
+  background-color:#282e34;
+  color:#ddd;
   }
   .section-dark{
   background-color:#282e34;
