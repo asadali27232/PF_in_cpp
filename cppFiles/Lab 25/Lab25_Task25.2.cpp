@@ -8,8 +8,8 @@ struct TimeStruct_t
     int minutes;
     string timeperiod;
 };
-void display_time(TimeStruct_t myTime);
-void tic(TimeStruct_t myTime);
+void display_time(TimeStruct_t& Time);
+void tic(TimeStruct_t& Time);
 int main()
 {
     TimeStruct_t myTime;
@@ -26,33 +26,34 @@ int main()
     cout<<"Enter the Time period: ";
     cin>>myTime.timeperiod;
     cout<<endl;
-    //Adding 1
+
     tic(myTime);
     //Output using Function
     display_time(myTime);
 
     return 0;
 }
-void display_time(TimeStruct_t myTime)
+void tic(TimeStruct_t& Time)
 {
-    cout<<setw(2) << setfill('0') <<  myTime.hours<<":"
-        << setw(2) << setfill('0') << myTime.minutes<< " " << myTime.timeperiod<<endl;
-}
-void tic(TimeStruct_t myTime)
-{
-        myTime.minutes = myTime.minutes + 1;
-        if (myTime.minutes>60)
+        Time.minutes = Time.minutes + 1;
+        if (Time.minutes>60)
         {
-           myTime.minutes = 0;
-           myTime.hours = myTime.hours + 1;
+           Time.minutes = 0;
+           Time.hours = Time.hours + 1;
         }
-        if (myTime.hours>12)
+        if (Time.hours>12)
         {
-            myTime.hours = 1;
-            if(myTime.timeperiod == "pm" )
-                myTime.timeperiod = "am";
+            Time.hours = 1;
+            if(Time.timeperiod == "pm" )
+                Time.timeperiod = "am";
             else
-                myTime.timeperiod = "pm";
+                Time.timeperiod = "pm";
         }
 }
+void display_time(TimeStruct_t& Time)
+{
+    cout<<setw(2) << setfill('0') <<  Time.hours<<":"
+        << setw(2) << setfill('0') << Time.minutes<< " " << Time.timeperiod<<endl;
+}
+
 
