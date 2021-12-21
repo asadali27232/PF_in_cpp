@@ -36,18 +36,22 @@ int main()
 void tic(TimeStruct_t& Time)
 {
         Time.minutes = Time.minutes + 1;
-        if (Time.minutes>60)
+        if (Time.minutes>=60)
         {
            Time.minutes = 0;
            Time.hours = Time.hours + 1;
         }
-        if (Time.hours>12)
+        if (Time.hours==12)
         {
-            Time.hours = 1;
             if(Time.timeperiod == "pm" )
                 Time.timeperiod = "am";
             else
                 Time.timeperiod = "pm";
+        }
+        if (Time.hours>12)
+        {
+            Time.hours = 1;
+
         }
 }
 void display_time(TimeStruct_t& Time)
