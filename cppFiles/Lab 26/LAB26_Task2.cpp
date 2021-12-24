@@ -30,17 +30,18 @@ int main()
     cin >> event1.time1.minutes;
     cout << "Enter Time Period: ";
     cin >> event1.time1.timeperiod;
-    cout << "Enter Time Date: ";
+    cout << "Enter Date: ";
     cin >> event1.date1.date;
-    cout << "Enter Time Month: ";
+    cout << "Enter Month: ";
     cin >> event1.date1.month;
-    cout << "Enter Time Year: ";
+    cout << "Enter Year: ";
     cin >> event1.date1.year;
 
     display_time(event1);
 
     return 0;
 }
+void display_time(DateTimeStruct& event1);
 void display_time(DateTimeStruct& event1)
 {
     cout << endl;

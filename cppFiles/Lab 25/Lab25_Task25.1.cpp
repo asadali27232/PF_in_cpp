@@ -11,9 +11,9 @@ struct TimeStruct_t
 int main()
 {
     TimeStruct_t myTime;
-    myTime.hours=03;
-    myTime.minutes=49;
-    myTime.timeperiod="pm";
+    myTime.hours = 03;
+    myTime.minutes = 49;
+    myTime.timeperiod = "pm";
     cout<< setw(2) << setfill('0') << myTime.hours<<":"<<setw(2) << setfill('0')<< myTime.minutes<< " " <<myTime.timeperiod<<endl;
     cout<<"Enter the Hour: ";
     cin>>myTime.hours;

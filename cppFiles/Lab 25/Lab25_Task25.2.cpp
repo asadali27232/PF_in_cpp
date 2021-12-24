@@ -10,6 +10,7 @@ struct TimeStruct_t
 };
 void display_time(TimeStruct_t& Time);
 void tic(TimeStruct_t& Time);
+
 int main()
 {
     TimeStruct_t myTime;

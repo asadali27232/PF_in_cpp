@@ -9,7 +9,6 @@ struct partType
 };
 void input (partType x)
 {
-
     cout << "Part Name: ";
     cin >> x.partName;
     cout << "Part Number:";
@@ -18,11 +17,10 @@ void input (partType x)
     cin >> x.price;
     cout << "Quantities in Stock:";
     cin >> x.quantitiesInStock;
-
 }
 int main()
 {
-    partType x;
-    input(x);
+    partType y;
+    input(y);
     return 0;
 }
