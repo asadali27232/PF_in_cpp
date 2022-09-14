@@ -6,7 +6,7 @@ struct TimeStruct_t
 {
     int hours;
     int minutes;
-    string timeperiod;
+    string timePeriod;
 };
 struct DateStruct
 {
@@ -29,7 +29,7 @@ int main()
     cout << "Enter Minutes: ";
     cin >> event1.time1.minutes;
     cout << "Enter Time Period: ";
-    cin >> event1.time1.timeperiod;
+    cin >> event1.time1.timePeriod;
     cout << "Enter Date: ";
     cin >> event1.date1.date;
     cout << "Enter Month: ";
@@ -50,6 +50,6 @@ void display_time(DateTimeStruct& event1)
         << setw(2) << setfill('0') << event1.date1.month<< "-" << setw(4) << event1.date1.year;
     cout << " to ";
     cout<<setw(2) << setfill('0') <<  event1.time1.hours<<":"
-        << setw(2) << setfill('0') << event1.time1.minutes<< " " << event1.time1.timeperiod;
+        << setw(2) << setfill('0') << event1.time1.minutes<< " " << event1.time1.timePeriod;
     cout << endl;
 }

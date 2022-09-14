@@ -6,7 +6,7 @@ struct TimeStruct_t
 {
     int hours;
     int minutes;
-    string timeperiod;
+    string timePeriod;
 };
 void display_time(TimeStruct_t& Time);
 void tic(TimeStruct_t& Time);
@@ -16,8 +16,8 @@ int main()
     TimeStruct_t myTime;
     myTime.hours=03;
     myTime.minutes=49;
-    myTime.timeperiod="pm";
-    cout<< setw(2) << setfill('0') << myTime.hours<<":"<<setw(2) << setfill('0')<< myTime.minutes<< " " <<myTime.timeperiod<<endl;
+    myTime.timePeriod="pm";
+    cout << setw(2) << setfill('0') << myTime.hours << ":" << setw(2) << setfill('0') << myTime.minutes << " " << myTime.timePeriod << endl;
     cout<<"Enter the Hour: ";
     cin>>myTime.hours;
     cout<<endl;
@@ -25,7 +25,7 @@ int main()
     cin>>myTime.minutes;
     cout<<endl;
     cout<<"Enter the Time period: ";
-    cin>>myTime.timeperiod;
+    cin>>myTime.timePeriod;
     cout<<endl;
 
     tic(myTime);
@@ -44,10 +44,10 @@ void tic(TimeStruct_t& Time)
         }
         if (Time.hours==12)
         {
-            if(Time.timeperiod == "pm" )
-                Time.timeperiod = "am";
+            if(Time.timePeriod == "pm" )
+                Time.timePeriod = "am";
             else
-                Time.timeperiod = "pm";
+                Time.timePeriod = "pm";
         }
         if (Time.hours>12)
         {
@@ -57,8 +57,8 @@ void tic(TimeStruct_t& Time)
 }
 void display_time(TimeStruct_t& Time)
 {
-    cout<<setw(2) << setfill('0') <<  Time.hours<<":"
-        << setw(2) << setfill('0') << Time.minutes<< " " << Time.timeperiod<<endl;
+    cout << setw(2) << setfill('0') << Time.hours << ":"
+         << setw(2) << setfill('0') << Time.minutes << " " << Time.timePeriod << endl;
 }
 
 

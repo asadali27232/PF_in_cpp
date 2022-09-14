@@ -29,11 +29,5 @@ int main()
     for(int i=0; i<sizee; i++)
         cout << nPtr[i] << " ";
 
-
-
-
-
-
-
     return 0;
 }
