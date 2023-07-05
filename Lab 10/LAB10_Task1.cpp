@@ -1,20 +1,17 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
     int num;
-    int counter = 1;
     cout << "Enter a number:";
     cin >> num;
 
-    while (counter <= 10)
+    for (int i = 1; i < 11 ; i++)
     {
-        cout << num << " x " << counter <<  " = " <<  num*counter << endl;
-        counter++ ;
-
+        cout << num << " x " << i << " = " << num * i << endl;
+        i++;
     }
-
     return 0;
 }
