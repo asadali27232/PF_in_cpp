@@ -12,10 +12,6 @@ The primary purpose of this repository is to provide a centralized hub for all t
 
 Feel free to explore the lab tasks, code samples, and solutions provided in this repository. Use them as a reference to enhance your understanding of essential programming concepts. Collaborate with your peers, ask questions, and seek clarification. Learning programming is a collaborative effort, and this repository aims to facilitate that process.
 
-## GitHub Page
-
-To further enhance your experience, I have created a [GitHub Page](https://your-github-page-link.com) dedicated to this repository. Visit the page to interact with the lab tasks graphically and access additional resources, including explanations, tutorials, and more.
-
 ## Technologies Used
 
 ![C++ Badge](https://img.shields.io/badge/-C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
