@@ -27,17 +27,6 @@ To further enhance your experience, I have created a [GitHub Page](https://your-
 3. Experiment with the code, modify it, and test your understanding of the concepts.
 4. Visit the GitHub Page for a richer graphical interaction and supplementary resources.
 
-## Contribution
-
-If you have additional lab tasks, solutions, or insights related to Programming Fundamentals in C++, I encourage you to contribute to this repository. Together, we can build a comprehensive and valuable resource for learners of all levels. Please refer to the [contribution guidelines](CONTRIBUTING.md) for details on how to contribute.
-
-## License
-
-This repository is licensed under the [MIT License](LICENSE.md).
-
-I hope that this repository serves as a useful resource in your journey to grasp the foundational concepts of programming using C++. Happy coding and learning!
-
-
 ### 📫 Let's Connect
 
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/923074315952)
